@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a32e229695.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>P</span>ortfolio</div>
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span> Prashant</span> <br>from Belagavi</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <img src="img/PRASHANT MANE .1.JPG" alt="">
+                </div>
+                <div class="right">
+                    <h1 class="sub-title">About me</h1>
+                    <p><br>Hi there, My name is Prashant, and I graduated in 2022. I have a strong interest in front-end programming, and I'm looking forward to using my abilities in the workplace. For me, web development is more than simply a pastime—it's a passion that inspires me to be creative and achieve success. I've been fascinated by the process of creating websites since I was a student, and I've immersed myself in all facets of front-end programming, from creating user-friendly user interfaces to performance-enhancing code. I'm thrilled to start this new chapter in my life because I'm enthusiastic about learning and growing in a dynamic, supportive team atmosphere. I also feel secure in my talents.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="clickTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="clickTab('exp')">Experience</p>
+                        <p class="tab-links" onclick="clickTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-container active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span> <br> </li>
+                            <li><span>CSS</span> <br></li>
+                            <li><span>Java Script</span> <br></li>
+                            <li><span>React</span><br></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-container" id="exp">
+                        <ul>
+                            <li><span>Fresher</span> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-container" id="education">
+                        <ul>
+                            <li><span>BCA 2022</span> <br> VSM's BBA and BCA college <br>81%</li>
+                            <li><span>PUC 2019</span> <br>BK pu college<br>58.33%</li>
+                            <li><span>SSLC 2017</span> <br>S S J kannada high school<br>82.24%</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------service------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Personal Portfolio</h2>
+                    <p> Using HTML, CSS, and JavaScript, I developed my own portfolio website. You may see the code on GitHub. This project demonstrates my expertise in front-end development as well as my capacity to create and construct visually appealing and responsive web sites.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <!-- <div>
+                    <i class="fa-brands fa-pagelines"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur ut id deserunt nemo quia eos a unde, tenetur </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Web Application </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit consequuntur ut id deserunt nemo quia eos a unde, tenetur </p>
+                    <a href="">Learn more</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------------------contact us------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>prashantmn47@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7624821788</p>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/prashant_mn17?igsh=ZW1wb2V1OGQ5YTdv" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prashant-mane-727b60210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target=”_blank”><i class="fa-brands fa-linkedin" target=”_blank”></i></a>
+                        <a href="https://github.com/prashmn" target=”_blank”><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://wa.me/7624821788"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="img/Prashant_Mane CV.pdf" download class="btn ">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="e5d1a790-92b3-4c1f-9c4b-ffb84c414daf">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea rows="6" name="text" placeholder="Your msg" required ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright &#169; Prashant. made with my knowladge </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontains= document.getElementsByClassName('tab-container');
+
+        function clickTab(tabName)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontain of tabcontains)
+            {
+                tabcontain.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+        
+   
+   
+        var sidemenu=document.getElementById('sideMenu');
+        function openMenu(){
+            sidemenu.style.right="0";
+        }
+        function closeMenu(){
+            sidemenu.style.right="-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
